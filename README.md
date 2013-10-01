@@ -2,20 +2,32 @@
 
 This project is part of a [tutorial series](http://dailyjs.com/2013/04/11/angularjs-1/) from DailyJS for AngularJS and Yeoman.
 
-## Installation
 
-You will need:
+## Dependencies
 
 * [Node 0.10.x](http://nodejs.org/)
-* [Bower](http://bower.io/) (`npm install -g bower`)
-* [Grunt](http://gruntjs.com/) (`npm install -g grunt-cli`)
-* Compass (`gem install compass`)
+* [Bower](http://bower.io/)
+* [Grunt](http://gruntjs.com/)
+* [Compass](http://compass-style.org/)
 
-1. `git clone git@github.com/rickydunlop/angularjs-feeds.git`
-2. `cd angularjs-feeds`
-4. `npm install`
-5. `bower install`
-6. `grunt build`
+
+```
+npm install -g bower
+npm install -g grunt-cli
+gem install compass
+```
+
+## Installation
+
+```
+git clone git@github.com/rickydunlop/angularjs-feeds.git
+cd angularjs-feeds
+  
+npm install
+bower install
+grunt build
+```
+	
 
 ## Usage
 
