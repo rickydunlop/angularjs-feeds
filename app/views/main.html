@@ -1,0 +1,30 @@
+<p>Refresh (seconds): <input ng-model="refreshInterval"></p>
+
+<h2>All Stories</h2>
+
+<ul>
+  <li ng-repeat="item in stories"><a href="{{ item.link.href }}">{{ item.title }}</a></li>
+</ul>
+
+<hr />
+
+<h3>Add Another Feed</h3>
+
+<form name="newFeed" novalidate>
+  URL: <input size="80" name="url" ng-model="newFeed.url" type="url" required>
+  <button ng-disabled="!newFeed.$valid" ng-click="addFeed(newFeed)">Add Feed</button>
+  <span class="error" ng-show="newFeed.$error.required">Required!</span>
+  <span class="error" ng-show="newFeed.$error.url">Invalid URL format!</span>
+</form>
+
+<hr/>
+
+<div ng-repeat="feed in feeds">
+  <ul>
+    <li ng-repeat="item in feed.items"><a href="{{ item.link.href }}">{{ item.title }}</a></li>
+  </ul>
+  URL: <input size="80" ng-model="feed.url">
+  <button ng-click="fetchFeed(feed)">Update</button>
+  <button ng-click="deleteFeed(feed)">Delete</button>
+  <hr />
+</div>
