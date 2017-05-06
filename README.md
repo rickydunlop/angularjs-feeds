@@ -1,5 +1,7 @@
 # AngularJS Feed reader
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rickydunlop/angularjs-feeds.svg)](https://greenkeeper.io/)
+
 This project is part of a [tutorial series](http://dailyjs.com/2013/04/11/angularjs-1/) from DailyJS for AngularJS and Yeoman.
 
 
